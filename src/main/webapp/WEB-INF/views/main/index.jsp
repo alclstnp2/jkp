@@ -5,28 +5,27 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
-    body {
-        margin: 0;
-    }
-    section {
-width: 1000px;
-height: 400px;
-border: 1px solid black;
-margin: auto;
-}
-
-.sec1 {
-background: #E0F7FA;
-}
-.sec2 {
-background: #E0F2F1;
-}
-.sec3 {
-background: #EDE7F6;
-}
-.sec4 {
-background: #FFF9E7;
-}
+	body {
+		margin: 0;
+	}
+	section {
+	width: 1000px;
+	height: 400px;
+	border: 1px solid black;
+	margin: auto;
+	}
+	.sec1 {
+		background: #E0F7FA;
+	}
+	.sec2 {
+		background: #E0F2F1;
+	}
+	.sec3 {
+		background: #EDE7F6;
+	}
+	.sec4 {
+		background: #FFF9E7;
+	}
 </style>
 
 <script>
