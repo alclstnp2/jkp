@@ -70,6 +70,42 @@
 		text-decoration: underline;
 		color: green;
 	}
+	#section1 #loginMenu > li {
+		display: inline-block;
+		list-style-type: none;
+		width: 200px;
+		height: 50px;
+		line-height: 30px;
+		text-align: center;
+		font-weight: 900;
+		position: relative;
+		z-index: 5;
+	}
+	#supMenu {
+		display: inline-block;
+	}
+	#section1 #loginMenu #cusMenu {
+	    padding-left: 0;
+	    position: absolute;
+	    top: 50px; /* 메뉴가 나타날 위치 */
+	    background: white;
+	    display: none; /* 처음에 숨김 처리 */
+	    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+	    z-index: 10; /* 다른 요소보다 위에 나타나도록 설정 */
+	}
+	#section1 #loginMenu #cusMenu > li {
+	    list-style-type: none; /* 리스트 스타일 제거 */
+	    width: 150px; /* 메뉴 폭 */
+	    height: 35px; /* 메뉴 높이 */
+	    line-height: 35px; /* 텍스트 세로 정렬 */
+	    text-align: center; /* 텍스트 가운데 정렬 */
+	    cursor: pointer; /* 포인터 모양 변경 */
+	    border-bottom: 1px solid #ddd; /* 테두리 */
+	}
+	#section1 #loginMenu #cusMenu > li:hover {
+	    text-decoration: underline; /* 마우스 오버 시 밑줄 */
+	    color: green; /* 마우스 오버 시 텍스트 색상 변경 */
+	}
 	header > nav {
 		width: 1200px;
 		height: 70px;
@@ -160,6 +196,14 @@
 		document.getElementsByClassName("menu")[n].style.visibility = "hidden";
 	}
 	
+	function viewCus() {
+		document.getElementById("cusMenu").style.display = "block";
+	}
+	
+	function hideCus() {
+		document.getElementById("cusMenu").style.display = "none";
+	}
+	
 	function viewMy() {
 		document.getElementById("memberMenu").style.display = "block";
 	}
@@ -185,23 +229,29 @@
                 <c:if test="${userid==null}">
                     <a href="../member/member"> 회원가입 </a> |
                     <a href="../login/login"> 로그인 </a> |
-                    <span id="myInfo" onmouseover="viewMy()" onmouseout="hideMy()"> 고객서비스
-                        <ul id="memberMenu">
-                            <li> 회원정보 </li>
-                            <li> 예약정보 </li>
-                            <li> 자유게시판 </li>
+                    <div id="supMenu" onmouseover="viewCus()" onmouseout="hideCus()"> 고객센터
+                        <ul id="cusMenu">
+                            <li> 공지사항 </li>
+                            <li> 예약문의 </li>
+                            <li> 이벤트 </li>
                         </ul>
-                    </span>
+                    </div>
                 </c:if>
 
                 <c:if test="${userid!=null}">
-                    <a href="../member/content"> XXX님 </a> |
-                    <a href="../login/logout"> 로그아웃 </a> |
-                    <span id="myInfo" onmouseover="viewMy()" onmouseout="hideMy()"> 고객서비스
+                    <span id="myInfo" onmouseover="viewMy()" onmouseout="hideMy()">  XXX님 |
                         <ul id="memberMenu">
                             <li> 회원정보 </li>
                             <li> 예약정보 </li>
-                            <li> 자유게시판 </li>
+                            <li> 나의문의 </li>
+                        </ul>
+                    </span>
+                    <a href="../login/logout"> 로그아웃 </a> |
+                    <span id="supMenu" onmouseover="viewCus()" onmouseout="hideCus()"> 고객센터
+                        <ul id="cusMenu">
+                            <li> 공지사항 </li>
+                            <li> 예약문의 </li>
+                            <li> 이벤트 </li>
                         </ul>
                     </span>
                 </c:if>
