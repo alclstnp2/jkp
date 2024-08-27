@@ -2,41 +2,36 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>Insert title here</title>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+    body {
+        margin: 0;
+    }
+    section {
+width: 1000px;
+height: 400px;
+border: 1px solid black;
+margin: auto;
+}
 
-    <style>
-        body {
-            margin: 0;
-        }
+.sec1 {
+background: #E0F7FA;
+}
+.sec2 {
+background: #E0F2F1;
+}
+.sec3 {
+background: #EDE7F6;
+}
+.sec4 {
+background: #FFF9E7;
+}
+</style>
 
-        section {
-            width: 1000px;
-            height: 400px;
-            border: 1px solid black;
-            margin: auto;
-        }
+<script>
 
-        .sec1 {
-            background: #E0F7FA;
-        }
-
-        .sec2 {
-            background: #E0F2F1;
-        }
-
-        .sec3 {
-            background: #EDE7F6;
-        }
-
-        .sec4 {
-            background: #FFF9E7;
-        }
-    </style>
-
-    <script>
-        // JavaScript 코드는 여기에 추가
-    </script>
+</script>
 </head>
 <body>
     <section id="container1" class="sec1">
