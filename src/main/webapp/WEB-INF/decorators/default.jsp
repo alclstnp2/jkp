@@ -7,11 +7,13 @@
 <title>Insert title here</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Hahmlet:wght@100..900&display=swap');
 	* {
 		margin: 0;
 	}
 	body {
 		margin: 0;
+		font-family: 'Hahmlet';
 	}
 	header {
 		width: 100%;
@@ -32,14 +34,17 @@
 	}
 	#section1 #loginMenu {
 		width: 375px;
+		font-size: 20px;
+		font-weight: 600;
 	}
 	#section1 #loginMenu a {
 		text-decoration: none;
 		color: black;
 	}
 	#section1 #loginMenu a:hover {
-		text-decoration: underline;
+		text-decoration: none;
 		color: green;
+		font-weight: 900;
 	}
 	#section1 #loginMenu #memberMenu {
 		position: absolute;
@@ -70,6 +75,7 @@
 		height: 70px;
 		margin: auto;
 		line-height: 50px;
+		font-family: 'Gugi';
 	}
 	header > nav a {
 		text-decoration: none;
@@ -78,6 +84,7 @@
 	header > nav a:hover {
 		text-decoration: underline;
 		color: green;
+		text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000;
 	}
 	header > nav #main {
 		padding-left: 0;
