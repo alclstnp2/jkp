@@ -1,75 +1,58 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
 
-<style>
+    <style>
+        body {
+            margin: 0;
+        }
 
-body
-{
-	margin:0px;
-}
+        section {
+            width: 1000px;
+            height: 400px;
+            border: 1px solid black;
+            margin: auto;
+        }
 
-section
-{
-	
-	width: 1000px;
-	height: 400px;
-	border: 1px solid black;
-	
-}
+        .sec1 {
+            background: #E0F7FA;
+        }
 
-.sec1
-{
-	background:#E0F7FA;
-	margin:auto;
-}
+        .sec2 {
+            background: #E0F2F1;
+        }
 
-.sec2
-{
-	background:#E0F2F1;
-	margin:auto;
-}
+        .sec3 {
+            background: #EDE7F6;
+        }
 
-.sec3
-{
-	background:#EDE7F6;
-	margin:auto;
-}
+        .sec4 {
+            background: #FFF9E7;
+        }
+    </style>
 
-.sec4
-{
-	bacrground:#FFF9E7;
-	margin:auto;
-}
-
-</style>
-
-<script>
-
-</script>
-
+    <script>
+        // JavaScript 코드는 여기에 추가
+    </script>
 </head>
 <body>
+    <section id="container1" class="sec1">
+        1
+    </section>
 
-	<section id=container class=sec1>
-	1
-	</section>
-	
-	<section id=container class=sec2>
-	2
-	</section>
-	
-	<section id=container class=sec3>
-	3
-	</section>
-	
-	<section id=container class=sec4>
-	4
-	</section>
+    <section id="container2" class="sec2">
+        2
+    </section>
 
+    <section id="container3" class="sec3">
+        3
+    </section>
+
+    <section id="container4" class="sec4">
+        4
+    </section>
 </body>
 </html>
